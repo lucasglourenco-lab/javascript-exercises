@@ -1,4 +1,7 @@
 const fibonacci = function (number) {
+  if (typeof number !== "number" || Number.isNaN(number) || number <= 0) {
+    return "OOPS";
+  }
   const count = Number(number);
   if (isNaN(count)) {
     return `OOPS`;
